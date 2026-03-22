@@ -30,9 +30,9 @@ title: Inicio
 
       <!-- LINKS -->
       <div class="hero-links">
-        <a href="https://github.com/TU_USER" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/TU_USER" target="_blank">LinkedIn</a>
-        <a href="mailto:tu@email.com">Email</a>
+        <a href="https://github.com/LucasVCorrea">GitHub</a>
+        <a href="https://www.linkedin.com/in/lucas-correa-9b492b1a0/">LinkedIn</a>
+        <a href="mailto:lucasvalentincorrea@gmail.com">Email</a>
       </div>
 
     </div>
