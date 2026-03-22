@@ -123,6 +123,10 @@ body {
 
 /* LINKS */
 
+.hero-links {
+  margin-top: 15px;  /* 👈 ESTE es el cambio clave */
+}
+
 .hero-links a {
   margin-right: 15px;
   color: var(--text-muted);
