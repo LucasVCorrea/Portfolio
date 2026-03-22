@@ -121,7 +121,7 @@ title: Inicio
 
     <!-- OTRO PROYECTO -->
     <div class="project-card">
-      <img src="{{ '/assets/img/scraping.png' | relative_url }}" alt="Web Scraping">
+      <img src="{{ '/assets/img/webscrapcaptura.jpg' | relative_url }}" alt="Web Scraping">
       <div class="project-content">
         <h3>Web Scraping App</h3>
         <p>Sistema de extracción y procesamiento automático de datos desde múltiples fuentes.</p>
@@ -130,6 +130,9 @@ title: Inicio
           <span>BeautifulSoup</span>
           <span>Automation</span>
         </div>
+        <a href="{{ 'herramientas/tai' | relative_url }}" class="btn primary">
+          Ver detalle
+        </a>
       </div>
     </div>
 
