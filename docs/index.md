@@ -22,13 +22,6 @@ title: Inicio
       Desarrollador de software y estudiante de ingeniería con experiencia en análisis de datos y visualización.
     </p>
 
-      <!-- MÉTRICAS -->
-      <div class="hero-stats">
-        <div><strong>+1M</strong> registros</div>
-        <div><strong>+20</strong> dashboards</div>
-        <div><strong>+5</strong> proyectos</div>
-      </div>
-
       <!-- BOTONES -->
       <div class="hero-actions">
         <a href="#proyectos" class="btn primary">Ver Proyectos</a>
