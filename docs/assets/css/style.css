@@ -436,3 +436,17 @@ hr {
 .hero-links a:hover {
   color: var(--primary);
 }
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    margin: auto;
+  }
+}
