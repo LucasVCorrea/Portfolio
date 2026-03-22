@@ -1,15 +1,15 @@
 ---
 layout: default
-title: T.A.I
+title: Automatización de Extracción de Datos
 ---
 
 <div class="tool-hero">
-  <h1>T.A.I</h1>
+  <h1>Automatización de Extracción de Datos</h1>
   <p class="tool-subtitle">
-    Sistema De Análisis de Apremios.
+    Script de scraping para recopilar información de manera automatizada y generar reportes completos.
   </p>
   <p>
-    Dashboard estratégico diseñado para el seguimiento integral de juicios en situación de apremio, permitiendo control, análisis y trazabilidad del proceso judicial.
+    Herramienta robusta que permite optimizar la recolección de datos, agilizar procesos manuales y centralizar información clave en un archivo CSV.
   </p>
 </div>
 
@@ -18,100 +18,63 @@ title: T.A.I
 ## Descripción General
 
 <div class="section-block">
-
-T.A.I centraliza la información vinculada a juicios de apremio, facilitando el monitoreo completo del ciclo de vida judicial, desde su inicio hasta su resolución o cobro efectivo.
-
-El sistema integra métricas operativas, estadísticas comparativas y consultas detalladas, brindando una visión clara del estado actual de la cartera judicial.
-
+Este proyecto permite extraer datos de sistemas web de forma automatizada, gestionando inicios de sesión, navegación por secciones, filtrado de información y paginación. 
+La información se guarda de manera incremental en un archivo CSV, asegurando que los datos estén siempre actualizados sin duplicaciones.
 </div>
 
 ---
 
-## Seguimiento del Ciclo de Vida
+## Funcionalidades Principales
 
 <div class="feature-grid">
 
 <div class="feature-item">
-<h3>Inicio de Juicios</h3>
-<p>Registro y contabilización de juicios iniciados por período, tipo de deudor y categoría de infracción.</p>
+<h3>Inicio de Sesión Automático</h3>
+<p>El sistema inicia sesión de forma segura y controlada, evitando la entrada manual de credenciales.</p>
 </div>
 
 <div class="feature-item">
-<h3>Estado Procesal</h3>
-<p>Visualización del estado actualizado de cada juicio: iniciado, en trámite, en ejecución, cancelado o finalizado.</p>
+<h3>Navegación Inteligente</h3>
+<p>Accede a secciones específicas, aplica filtros y selecciona la cantidad de registros a procesar automáticamente.</p>
 </div>
 
 <div class="feature-item">
-<h3>Juicios Cobrados</h3>
-<p>Identificación y seguimiento de expedientes con cobro efectivo, permitiendo análisis de recupero.</p>
+<h3>Extracción Detallada</h3>
+<p>Recopila información organizada de cada registro, incluyendo datos personales, contactos, direcciones y tablas asociadas.</p>
 </div>
 
 <div class="feature-item">
-<h3>Cierre y Resolución</h3>
-<p>Control de finalización del proceso judicial con trazabilidad documental completa.</p>
+<h3>Guardado Incremental</h3>
+<p>Los datos se guardan en un CSV de manera incremental, evitando pérdidas o duplicaciones durante la ejecución del script.</p>
 </div>
 
 </div>
 
 ---
 
-## Análisis Estadístico
+## Flujo de Trabajo
 
 <div class="section-block">
-
-<h3>Indicadores Generales</h3>
-<p>Métricas consolidadas sobre cantidad total de juicios iniciados, activos, cobrados y pendientes.</p>
-
-<h3>Personas Físicas y Jurídicas</h3>
-<p>Estadísticas segmentadas por tipo de deudor para análisis comparativo y evaluación de comportamiento de pago.</p>
-
-<h3>Evolución Temporal</h3>
-<p>Visualización de tendencias mensuales y anuales en la gestión de apremios.</p>
-
+1. Se configura el entorno de automatización con el navegador controlado por el script.  
+2. El script inicia sesión en la plataforma web de forma automatizada.  
+3. Se navega hasta la sección de interés y se aplican los filtros deseados.  
+4. Por cada registro, se accede a detalles adicionales y se extraen los datos relevantes.  
+5. Los datos se agregan a un archivo CSV de manera incremental para mantener un registro completo.  
+6. Se gestiona automáticamente la paginación hasta que se procesan todos los registros.  
 </div>
 
 ---
 
-## Consultas y Control Documental
+## Vista del Proyecto
 
-<div class="section-block">
-
-<h3>Consultas Detalladas</h3>
-<p>Búsqueda avanzada de expedientes por número de juicio, CUIT/DNI, estado procesal o rango de fechas.</p>
-
-<h3>Recibos de Pago</h3>
-<p>Acceso digital a comprobantes de pago asociados a juicios cancelados, garantizando respaldo documental y auditoría.</p>
-
-<h3>Trazabilidad Completa</h3>
-<p>Registro histórico de cada movimiento realizado sobre el expediente judicial.</p>
-
-</div>
-
----
-
-## Gestión Estratégica
-
-<div class="section-block">
-
-<h3>Recupero de Deuda</h3>
-<p>Análisis del rendimiento del proceso de apremio en términos de recupero financiero.</p>
-
-<h3>Control Operativo</h3>
-<p>Supervisión del volumen de juicios activos y eficiencia en la gestión judicial.</p>
-
-<h3>Soporte a la Toma de Decisiones</h3>
-<p>Información consolidada para planificación jurídica y administrativa.</p>
-
-</div>
-
-## Vista del Producto
-
-<div class="carousel">
-  <div class="slides">
-    <img src="{{ '/assets/img/TAIlogin.png' | relative_url }}" alt="Login">
-    <img src="{{ '/assets/img/TAIindex.png' | relative_url }}" alt="Pagina principal">
-    <img src="{{ '/assets/img/TAIquery.png' | relative_url }}" alt="Consulta detallada">
-    <img src="{{ '/assets/img/TAIreceipt.png' | relative_url }}" alt="Recibos">
+<div class="image-grid">
+  <div class="image-card">
+    <img src="{{ 'herramientas/assets/img/webscrapcaptura.jpg' | relative_url }}" alt="block code">
+    <h4>Bloque de Código</h4>
+  </div>
+  <div class="image-card">
+    <img src="{{ '/assets/img/webscrapresult.jpg' | relative_url }}" alt="result sample">
+    <h4>Logs de reportes</h4>
   </div>
 </div>
 
@@ -121,10 +84,65 @@ El sistema integra métricas operativas, estadísticas comparativas y consultas 
   <img class="lightbox-img">
 </div>
 
+<style>
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-card {
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.image-card img:hover {
+  transform: scale(1.03);
+}
+
+.image-card h4 {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+</style>
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-
-  const images = document.querySelectorAll(".slides img");
+  const images = document.querySelectorAll(".image-card img");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.querySelector(".lightbox-img");
   const closeBtn = document.querySelector(".close");
@@ -143,13 +161,11 @@ document.addEventListener("DOMContentLoaded", function() {
   closeBtn.addEventListener("click", closeLightbox);
 
   lightbox.addEventListener("click", (e) => {
-    if (e.target !== lightboxImg) {
-      closeLightbox();
-    }
+    if (e.target !== lightboxImg) closeLightbox();
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      closeLightbox();
-    }
+    if (e.key === "Escape") closeLightbox();
+  });
+});
 </script>
