@@ -49,15 +49,31 @@ title: Inicio
     <div class="timeline-item">
       <h3>Analista de Datos</h3>
       <span>2024 - Actualidad</span>
-      <p>Dashboards, análisis de tránsito y automatización de reportes.</p>
+      <p>Dashboards, análisis de datos en infracciones de tránsito y automatización de reportes.</p>
     </div>
 
     <div class="timeline-item">
       <h3>Desarrollador</h3>
-      <span>2023 - 2024</span>
-      <p>Python, scraping y procesamiento de datos.</p>
+      <span>2024 - Actualidad</span>
+      <p>Desarrollo de sistemas de carga y registro.</p>
+    </div>    
+    <div class="timeline-item">
+      <h3>Ayudante Universitario</h3>
+      <span>2023 - 2026</span>
+      <p>Ayudante en la asignatura ciencia de datos / organización de datos en FIUBA, Universidad de Buenos Aires</p>
     </div>
-
+  <h2>Estudios</h2>
+  
+    <div class="timeline-item">
+      <h3>Universitario</h3>
+      <span>2021 - Actualidad</span>
+      <p>Estudiante de la Facultad de Ingeniería de la Universidad de Buenos Aires. Buenos Aires, Argentina</p>
+      <h3>Extracurriculares</h3>
+      <span>Ago.2022 - Ago.2022</span>
+      <p>Full time intensive course in English as a Foreign Language studying at C1 Common European Framework level. Chester, England.</p>
+      <span>2011 - 2019</span>
+      <p>Estudiante de Inglés como lengua extranjera. Buenos Aires, Argentina</p>
+    </div>
   </div>
 </section>
 
@@ -68,7 +84,9 @@ title: Inicio
     <span class="badge">Python</span>
     <span class="badge">Pandas</span>
     <span class="badge">Streamlit</span>
+    <span class="badge">Sklearn</span>
     <span class="badge">SQL</span>
+    <span class="badge">OOP</span>
   </div>
 </section>
 
