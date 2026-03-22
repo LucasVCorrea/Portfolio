@@ -8,7 +8,7 @@ title: Inicio
   <div class="hero-content">
 
     <div class="hero-image">
-      <img src="docs/assets/img/profile.jpg" alt="Foto de perfil">
+      <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Foto de perfil">
     </div>
 
     <div class="hero-text">
