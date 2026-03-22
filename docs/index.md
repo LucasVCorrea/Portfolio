@@ -99,53 +99,38 @@ title: Inicio
 
     <!-- PROYECTO TESSA -->
     <div class="project-card">
-
       <img src="{{ '/assets/img/Dashindex.png' | relative_url }}" alt="TESSA Dashboard">
-
       <div class="project-content">
         <h3>T.E.S.S.A</h3>
-
         <p>
           Plataforma de análisis y monitoreo de fiscalización de fotomultas, 
           con métricas operativas, visualizaciones dinámicas y seguimiento de rendimiento.
         </p>
-
-        <!-- TECNOLOGÍAS -->
         <div class="project-tech">
           <span>Python</span>
           <span>Streamlit</span>
           <span>Pandas</span>
           <span>Data Visualization</span>
         </div>
-
-        <!-- BOTÓN -->
         <a href="{{ 'herramientas/tessa' | relative_url }}" class="btn primary">
           Ver detalle
         </a>
       </div>
-
     </div>
 
     <!-- OTRO PROYECTO -->
     <div class="project-card">
-
       <img src="{{ '/assets/img/scraping.png' | relative_url }}" alt="Web Scraping">
-
       <div class="project-content">
         <h3>Web Scraping App</h3>
-
-        <p>
-          Sistema de extracción y procesamiento automático de datos desde múltiples fuentes.
-        </p>
-
+        <p>Sistema de extracción y procesamiento automático de datos desde múltiples fuentes.</p>
         <div class="project-tech">
           <span>Python</span>
           <span>BeautifulSoup</span>
           <span>Automation</span>
         </div>
-
       </div>
-
     </div>
 
+  </div>
 </section>
