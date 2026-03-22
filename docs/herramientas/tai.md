@@ -69,7 +69,7 @@ La información se guarda de manera incremental en un archivo CSV, asegurando qu
 
 <div class="image-grid">
   <div class="image-card">
-    <img src="{{ 'herramientas/assets/img/webscrapcaptura.jpg' | relative_url }}" alt="block code">
+    <img src="{{ '/assets/img/webscrapcaptura.jpg' | relative_url }}" alt="block code">
     <h4>Bloque de Código</h4>
   </div>
   <div class="image-card">
