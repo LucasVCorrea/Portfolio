@@ -119,7 +119,7 @@ title: Inicio
         </div>
 
         <!-- BOTÓN -->
-        <a href="{{ '/tessa' | relative_url }}" class="btn primary">
+        <a href="{{ 'herramientas/tessa' | relative_url }}" class="btn primary">
           Ver detalle
         </a>
       </div>
