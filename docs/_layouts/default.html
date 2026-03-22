@@ -2,50 +2,197 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <title>Lucas Correa | Data Analyst</title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+
+:root {
+  --bg-main: #0f172a;
+  --bg-secondary: #111827;
+  --primary: #6366f1;
+  --secondary: #3b82f6;
+  --accent: #22c55e;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --border: #1f2937;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.main-header {
+  background: linear-gradient(90deg, #0f172a, #1e1b4b);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav-links a {
+  color: var(--text-main);
+  margin-left: 25px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+  opacity: 0.85;
+}
+
+h1 {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+h2 {
+  color: var(--secondary);
+}
+
+.section {
+  margin: 50px 0;
+}
+
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 1px var(--primary), 0 8px 25px rgba(99,102,241,0.25);
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #1f2937;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 5px 5px 0 0;
+}
+
+.timeline {
+  border-left: 2px solid var(--border);
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  color: var(--primary);
+}
+
+.timeline-item span {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+  </style>
 </head>
 <body>
 
 <header class="main-header">
   <div class="container nav-container">
-
-  <div class="logo">
-    <a href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/img/UNLaM.png' | relative_url }}" alt="Logo institucional">
-      <span class="logo-text">{{ site.title }}</span>
-    </a>
-  </div>
-
-<nav class="nav-links">
-  <a href="{{ '/' | relative_url }}">
-    <span class="material-symbols-outlined">home</span>
-    Inicio
-  </a>
-
-  <a href="{{ '/herramientas' | relative_url }}">
-    <span class="material-symbols-outlined">dashboard</span>
-    Herramientas
-  </a>
-
-  <a href="{{ '/proyectos' | relative_url }}">
-    <span class="material-symbols-outlined">construction</span>
-    Proyectos en Curso
-  </a>
-</nav>
-
+    <div class="logo">Lucas Correa</div>
+    <nav class="nav-links">
+      <a href="#">Inicio</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#skills">Skills</a>
+      <a href="#proyectos">Proyectos</a>
+    </nav>
   </div>
 </header>
 
-<main class="container content">
-  {{ content }}
-</main>
+<div class="container">
 
-<footer class="main-footer">
-  <div class="container">
-    <p>© 2026 | Desarrollo tecnológico propio</p>
-  </div>
+  <section class="section">
+    <h1>Data Analyst</h1>
+    <p>Analista de datos especializado en visualización, procesamiento y generación de insights para toma de decisiones.</p>
+  </section>
+
+  <section id="experiencia" class="section">
+    <h2>Experiencia</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>Analista de Datos</h3>
+        <span>2024 - Actualidad</span>
+        <p>Procesamiento de datos de tránsito, dashboards interactivos y automatización de reportes.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Desarrollador</h3>
+        <span>2023 - 2024</span>
+        <p>Desarrollo de aplicaciones con Python, scraping y visualización de datos.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div>
+      <span class="badge">Python</span>
+      <span class="badge">Pandas</span>
+      <span class="badge">Streamlit</span>
+      <span class="badge">SQL</span>
+      <span class="badge">Data Visualization</span>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section">
+    <h2>Proyectos</h2>
+
+    <div class="card">
+      <h3>Dashboard de Tránsito</h3>
+      <p>Visualización de infracciones con métricas en tiempo real.</p>
+    </div>
+
+    <div class="card">
+      <h3>Web Scraping App</h3>
+      <p>Extracción automatizada de datos desde múltiples fuentes.</p>
+    </div>
+
+  </section>
+
+</div>
+
+<footer class="footer">
+  © 2026 | Portfolio profesional
 </footer>
 
 </body>
