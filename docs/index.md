@@ -148,8 +148,4 @@ title: Inicio
 
     </div>
 
-  </div>
-</section>
-  </div>
-
 </section>
