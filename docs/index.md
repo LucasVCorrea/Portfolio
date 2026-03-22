@@ -18,9 +18,9 @@ title: Inicio
         Data Analyst · Visualización · Automatización
       </p>
 
-      <p class="hero-description">
-        Transformo datos en decisiones mediante análisis, visualización y automatización de procesos.
-      </p>
+    <p class="hero-description">
+      Desarrollador de software y estudiante de ingeniería con experiencia en análisis de datos y visualización.
+    </p>
 
       <!-- MÉTRICAS -->
       <div class="hero-stats">
