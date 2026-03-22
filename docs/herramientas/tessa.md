@@ -84,12 +84,22 @@ Facilita la toma de decisiones estratégicas y mejora la eficiencia operativa me
 
 ## Vista del Producto
 
-<div class="carousel">
-  <div class="slides">
+<div class="image-grid">
+  <div class="image-card">
     <img src="{{ '/assets/img/Dashindex.png' | relative_url }}" alt="Dashboard principal">
+    <h4>Dashboard Principal</h4>
+  </div>
+  <div class="image-card">
     <img src="{{ '/assets/img/Heatmap auditores.png' | relative_url }}" alt="Heatmap de Fiscalizadores">
+    <h4>Heatmap de Fiscalizadores</h4>
+  </div>
+  <div class="image-card">
     <img src="{{ '/assets/img/Perfil Auditor.png' | relative_url }}" alt="Perfil fiscalizador">
+    <h4>Perfil Fiscalizador</h4>
+  </div>
+  <div class="image-card">
     <img src="{{ '/assets/img/Info Camaras.png' | relative_url }}" alt="Información de Camaras">
+    <h4>Información de Cámaras</h4>
   </div>
 </div>
 
@@ -99,10 +109,65 @@ Facilita la toma de decisiones estratégicas y mejora la eficiencia operativa me
   <img class="lightbox-img">
 </div>
 
+<style>
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-card {
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.image-card img:hover {
+  transform: scale(1.03);
+}
+
+.image-card h4 {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+</style>
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-
-  const images = document.querySelectorAll(".slides img");
+  const images = document.querySelectorAll(".image-card img");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.querySelector(".lightbox-img");
   const closeBtn = document.querySelector(".close");
@@ -121,16 +186,11 @@ document.addEventListener("DOMContentLoaded", function() {
   closeBtn.addEventListener("click", closeLightbox);
 
   lightbox.addEventListener("click", (e) => {
-    if (e.target !== lightboxImg) {
-      closeLightbox();
-    }
+    if (e.target !== lightboxImg) closeLightbox();
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      closeLightbox();
-    }
+    if (e.key === "Escape") closeLightbox();
   });
-
 });
 </script>
