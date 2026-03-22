@@ -2,7 +2,46 @@
 layout: default
 title: Inicio
 ---
+<section class="hero">
 
+  <div class="hero-content">
+
+    <!-- FOTO -->
+    <div class="hero-image">
+      <img src="/assets/img/profile.jpg" alt="Foto de perfil">
+    </div>
+
+    <!-- INFO -->
+    <div class="hero-text">
+      <h1>Lucas Correa</h1>
+
+      <p class="hero-role">
+        Data Analyst · Visualización · Automatización
+      </p>
+
+      <p class="hero-description">
+        Transformo datos en decisiones. Desarrollo dashboards, automatizo procesos
+        y genero insights accionables para mejorar resultados.
+      </p>
+
+      <!-- BOTONES -->
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn primary">Ver Proyectos</a>
+        <a href="/cv.pdf" class="btn secondary" target="_blank">Descargar CV</a>
+      </div>
+
+      <!-- LINKS -->
+      <div class="hero-links">
+        <a href="https://github.com/TU_USER" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/TU_USER" target="_blank">LinkedIn</a>
+        <a href="mailto:tu@email.com">Email</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 <section class="section">
   <h1>Lucas Correa</h1>
   <p class="subtitle">
