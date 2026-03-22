@@ -85,6 +85,7 @@ title: Inicio
   <div>
     <span class="badge">Python</span>
     <span class="badge">Pandas</span>
+    <span class="badge">Ciencias de la computación</span>
     <span class="badge">Streamlit</span>
     <span class="badge">Sklearn-ML</span>
     <span class="badge">SQL</span>
