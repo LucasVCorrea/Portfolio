@@ -62,8 +62,10 @@ title: Inicio
       <span>2023 - 2026</span>
       <p>Ayudante en la asignatura ciencia de datos / organización de datos en FIUBA, Universidad de Buenos Aires</p>
     </div>
+  </div>
   <h2>Estudios</h2>
-  
+  <div class="timeline">
+    
     <div class="timeline-item">
       <h3>Universitario</h3>
       <span>2021 - Actualidad</span>
