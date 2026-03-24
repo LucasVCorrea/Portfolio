@@ -25,7 +25,7 @@ title: Inicio
       <!-- BOTONES -->
       <div class="hero-actions">
         <a href="#proyectos" class="btn primary">Ver Proyectos</a>
-        <a href="/cv.pdf" class="btn secondary" target="_blank">Descargar CV</a>
+        <a href="{{ '/cv.pdf' | relative_url }}" class="btn secondary" target="_blank">Descargar CV</a>
       </div>
 
       <!-- LINKS -->
