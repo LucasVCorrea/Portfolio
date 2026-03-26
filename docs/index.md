@@ -143,10 +143,10 @@ title: Inicio
         <p>Sistema de extracción y procesamiento automático de datos desde múltiples fuentes.</p>
         <div class="project-tech">
           <span>Python</span>
-          <span>BeautifulSoup</span>
-          <span>Automation</span>
+          <span>Visualizacion</span>
+          <span>Data Analytics</span>
         </div>
-        <a href="{{ 'herramientas/tai' | relative_url }}" class="btn primary">
+        <a href="{{ 'herramientas/berys' | relative_url }}" class="btn primary">
           Ver detalle
         </a>
       </div>
