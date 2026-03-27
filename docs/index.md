@@ -137,10 +137,10 @@ title: Inicio
     </div>
     <!-- OTRO PROYECTO -->
     <div class="project-card">
-      <img src="{{ '/assets/img/login.jpg' | relative_url }}" alt="Web Scraping">
+      <img src="{{ '/assets/img/Login.jpg' | relative_url }}" alt="Login">
       <div class="project-content">
         <h3>Actividad Municipal App</h3>
-        <p>Dashboard interactivo sobre la actividad de fotomultas en un municipio.</p>
+        <p>Dashboard interactivo sobre la actividad de fotomultas en un municipio. Desarrollado exclusivamente para la Universidad de La Matanza</p>
         <div class="project-tech">
           <span>Python</span>
           <span>Visualizacion</span>
