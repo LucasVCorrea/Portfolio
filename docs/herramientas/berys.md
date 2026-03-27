@@ -88,12 +88,22 @@ Facilita la toma de decisiones mediante indicadores claros, métricas comparativ
 </div>
 ## Vista del Producto
 
-<div class="carousel">
-  <div class="slides">
-    <img src="{{ '/assets/img/BeryIndex.png' | relative_url }}" alt="Dashboard principal">
-    <img src="{{ '/assets/img/PaymentsBerys.png' | relative_url }}" alt="Pagos">
-    <img src="{{ '/assets/img/LotesBerys.png' | relative_url }}" alt="Lotes Notificaciones">
-    <img src="{{ '/assets/img/FallosBerys.png' | relative_url }}" alt="Lotes Notificaciones">
+<div class="image-grid">
+  <div class="image-card">
+    <img src="{{ '/assets/img/Login.png' | relative_url }}" alt="Login">
+    <h4>Inicio de Sesión</h4>
+  </div>
+  <div class="image-card">
+    <img src="{{ '/assets/img/Main site.png' | relative_url }}" alt="Dashboard principal">
+    <h4>Dashboard Principak</h4>
+  </div>
+  <div class="image-card">
+    <img src="{{ '/assets/img/Actividad por Camaras.png' | relative_url }}" alt="Mapa Interactivo">
+    <h4>Mapa Interactivo</h4>
+  </div>
+  <div class="image-card">
+    <img src="{{ '/assets/img/Actividad Juzgados.png' | relative_url }}" alt="Informacion Juzgados">
+    <h4>Actividad Judicial</h4>
   </div>
 </div>
 
@@ -103,10 +113,65 @@ Facilita la toma de decisiones mediante indicadores claros, métricas comparativ
   <img class="lightbox-img">
 </div>
 
+<style>
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-card {
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.image-card img:hover {
+  transform: scale(1.03);
+}
+
+.image-card h4 {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+</style>
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-
-  const images = document.querySelectorAll(".slides img");
+  const images = document.querySelectorAll(".image-card img");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.querySelector(".lightbox-img");
   const closeBtn = document.querySelector(".close");
@@ -125,16 +190,11 @@ document.addEventListener("DOMContentLoaded", function() {
   closeBtn.addEventListener("click", closeLightbox);
 
   lightbox.addEventListener("click", (e) => {
-    if (e.target !== lightboxImg) {
-      closeLightbox();
-    }
+    if (e.target !== lightboxImg) closeLightbox();
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      closeLightbox();
-    }
+    if (e.key === "Escape") closeLightbox();
   });
-
 });
 </script>
